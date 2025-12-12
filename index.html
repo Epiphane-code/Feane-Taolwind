@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="src/assets/fontawesome/webfonts/fa-brands-400.woff2">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fugaz+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="group w-screen min-h-screen bg-[url('/src/assets/img/hero-bg.jpg')] bg-center bg-cover">
+        <header class=" container px-10 mx-auto group">
+            <nav class="flex justify-between text-white items-center pt-2">
+                <span class="logo pr-10 text-4xl font-[Dancing_Script]">Feane</span>
+                <ul class="hidden lg:flex items-center gap-4">
+                    <li class=" text-test"> <a href="#">HOME</a> </li>
+                    <li class=" hover:text-[#BE8E27]"> <a href="./src/pages/menu.html">MENU</a> </li>
+                    <li class=" hover:text-[#BE8E27]"> <a href="./src/pages/about.html">ABOUT</a> </li>
+                    <li class=" hover:text-[#BE8E27]"> <a href="./src/pages/bookTable.html">BOOK TABLE</a> </li>
+                </ul>
+                <ul class="hidden lg:flex gap-4 items-center">
+                    <li class=" hover:text-[#BE8E27]"> <a href="#"> <i class="fa-solid fa-user"></i> </a> </li>
+                    <li class=" hover:text-[#BE8E27]"> <a href="#"> <i class="fa-solid fa-cart-shopping"></i> </a> </li>
+                    <li class=" hover:text-[#BE8E27]"> <a href="#"> <i class="fa-solid fa-magnifying-glass"></i> </a>
+                    </li>
+                    <li class=""> <a class="px-6 py-2 bg-[#BE8E27] flex rounded-full" href="#"> Order Online </a> </li>
+                </ul>
+
+                <div class="relative flex lg:hidden group w-10 h-full">
+
+                    <label class="absolute -top-4 right-0 w-full h-full bg-transparent group" for="close">
+                        <input type="radio" name="btn-op" id="close" class="peer hidden" checked>
+                        <div
+                            class="peer-checked:opacity-0 transition-transform duration-100 rotate-180 peer-checked:rotate-0">
+                            <i class="fa-solid fa-xmark text-4xl"></i>
+                        </div>
+                    </label>
+                    <label class="absolute -top-4 right-0 w-full h-full bg-transparent" for="open">
+                        <input type="radio" name="btn-op" id="open" class="peer hidden z-1">
+                        <div class="peer-checked:opacity-0 peer-checked:hidden"> <i
+                                class="fa-solid fa-list text-4xl"></i></div>
+                    </label>
+                </div>
+
+            </nav>
+
+            <div
+                class="flex relative w-full lg:hidden opacity-0 flex-col  h-0 transition-all duration-500 group-has-[#open:checked]:h-61 group-has-[#open:checked]:opacity-100 items-center text-white pt-10 gap-5 mb-10 ">
+                <div class="absolute  w-full flex flex-col items-center gap-10 h-[300px] bg-[url('/src/assets/img/hero-bg.jpg')] sm:bg-none bg-center bg-cover">
+                    <ul class="flex flex-col items-center gap-10">
+                        <li class=" text-[#BE8E27]"> <a href="./index.html">HOME</a> </li>
+                        <li class=" hover:text-[#BE8E27]"> <a href="./src/pages/menu.html">MENU</a> </li>
+                        <li class=" hover:text-[#BE8E27]"> <a href="./src/pages/about.html">ABOUT</a> </li>
+                        <li class=" hover:text-[#BE8E27]"> <a href="./src/pages/bookTable.html">BOOK TABLE</a> </li>
+                    </ul>
+                    <ul class="flex gap-10 items-center">
+                        <li class=" hover:text-[#BE8E27]"> <a href="#"> <i class="fa-solid fa-user"></i> </a> </li>
+                        <li class=" hover:text-[#BE8E27]"> <a href="#"> <i class="fa-solid fa-cart-shopping"></i> </a>
+                        </li>
+                        <li class=" hover:text-[#BE8E27]"> <a href="#"> <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </li>
+                        <li class=""> <a class="px-6 py-2 bg-[#BE8E27] flex rounded-full" href="#"> Order Online </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+        </header>
+        <div class="w-screen">
+            <div
+                class="h-[80vh] group container mx-auto p-10 flex flex-col-reverse items-start justify-end sm:pt-[20%] text-white">
+
+                <div class="flex gap-3 items-center">
+                    <label for="un">
+                        <input type="radio" name="fil" id="un" class="peer" checked hidden>
+                        <div
+                            class="w-3 h-3 rounded-full bg-white peer-checked:w-4 peer-checked:h-4 peer-checked:bg-amber-400">
+                        </div>
+                    </label>
+                    <label for="deux">
+                        <input type="radio" name="fil" id="deux" class="peer" hidden>
+                        <div
+                            class="w-3 h-3 rounded-full bg-white peer-checked:w-4 peer-checked:h-4 peer-checked:bg-amber-400">
+                        </div>
+                    </label>
+                    <label for="trois">
+                        <input type="radio" name="fil" id="trois" class="peer" hidden>
+                        <div
+                            class="w-3 h-3 rounded-full bg-white peer-checked:w-4 peer-checked:h-4 peer-checked:bg-amber-400">
+                        </div>
+                    </label>
+                </div>
+
+                <div class="relative h-[250px] w-full overflow-hidden">
+                    <div
+                        class="absolute top-1/2 -translate-y-1/2 w-[300%] grid grid-cols-3 transition-transform duration-500 animation-fil group-has-[#un:checked]:translate-x-0 group-has-[#deux:checked]:translate-x-[33.33%] group-has-[#trois:checked]:translate-x-[66.66%] group-has-[input:focus]:transition-none">
+                        <div class="w-[400px] flex flex-col gap-4">
+                            <h1 class="text-3xl font-[Dancing_Script]">Fast Food Restaurant</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis reprehenderit mollitia
+                                dignissimos eius nostrum reiciendis laborum. Saepe quibusdam accusamus officia!
+                                Architecto incidunt molestias</p>
+                            <button class="bg-[#BE8E27] px-10 py-3 rounded-full w-[200px]">Order Now</button>
+                        </div>
+                        <div class="w-[400px] flex flex-col gap-4">
+                            <h1 class="text-3xl font-[Dancing_Script]">Fast Food Restaurant</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis reprehenderit mollitia
+                                dignissimos eius nostrum reiciendis laborum. Saepe quibusdam accusamus officia!
+                                Architecto incidunt molestias</p>
+                            <button class="bg-[#BE8E27] px-10 py-3 rounded-full w-[200px]">Order Now</button>
+                        </div>
+                        <div class="w-[400px] flex flex-col gap-4">
+                            <h1 class="text-3xl font-[Dancing_Script]">Fast Food Restaurant</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis reprehenderit mollitia
+                                dignissimos eius nostrum reiciendis laborum. Saepe quibusdam accusamus officia!
+                                Architecto incidunt molestias</p>
+                            <button class="bg-[#BE8E27] px-10 py-3 rounded-full w-[200px]">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <main class="container px-10 mx-auto my-10">
+        <div class="grid sm:grid-cols-2 gap-5">
+            <div class="flex flex-col items-center lg:flex-row bg-[#202831] text-white rounded p-4 gap-3">
+                <div class="border-4 max-w-[200px] border-amber-300 overflow-hidden rounded-full">
+                    <img class="transition-transform duration-200 hover:scale-110  rounded-full "
+                        src="src/assets/img/o1.jpg" alt="">
+                </div>
+                <div class="flex flex-col items-center lg:items-start justify-around gap-4">
+                    <span class="font-[Dancing_Script] text-3xl" >Tasty thursday</span>
+                    <span
+                        class="text-white relative text-4xl before:content-['off'] before:absolute before:-bottom-1 before:left-[80px] before:text-white before:text-[20px]">20%</span>
+                    <a href="#" class="bg-[#BE8E27] px-4 py-3 rounded-full max-w-[200px]">Order Now
+                        <i class="fa-solid fa-cart-shopping justify-self-auto"></i>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="flex flex-col items-center lg:flex-row bg-[#202831] text-white rounded p-4 gap-3">
+                <div class="border-4 max-w-[200px] border-amber-300 overflow-hidden rounded-full">
+                    <img class="transition-transform duration-200 hover:scale-110  rounded-full "
+                        src="src/assets/img/o2.jpg" alt="">
+                </div>
+                <div class="flex flex-col items-center lg:items-start justify-around gap-4">
+                    <span class="font-[Dancing_Script] text-3xl" >Tasty thursday</span>
+                    <span
+                        class="text-white relative text-4xl before:content-['off'] before:absolute before:-bottom-1 before:left-[80px] before:text-white before:text-[20px]">20%</span>
+                    <a href="#" class="bg-[#BE8E27] px-4 py-3 rounded-full max-w-[200px]">Order Now
+                        <i class="fa-solid fa-cart-shopping justify-self-auto"></i>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="justify-self-center p-10 font-[Dancing_Script] text-3xl"> Our Menu </div>
+        <div>
+            <ul class="flex justify-self-center gap-5 mb-10">
+                <li>All</li>
+                <li>Burger</li>
+                <li>Pizza</li>
+                <li>Pasta</li>
+                <li>Fries</li>
+            </ul>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="h-auto bg-[#202831] flex flex-col rounded-2xl text-white">
+                <div class="bg-[#F2F2F4] rounded-bl-[20%] rounded-t-2xl py-10 overflow-hidden">
+                    <img class="w-[200px] m-auto transition-transform duration-200 hover:scale-110"
+                        src="src/assets/img/f3.png" alt="">
+                </div>
+                <div class="p-4 flex flex-col gap-5">
+                    <span class="text-2xl">Tasty Burger</span>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, beatae quo facilis blanditiis ea
+                        quis quibusdam maxime reiciendis sit voluptatibus</div>
+                    <div class="flex justify-between items-center">
+                        <div>$19</div>
+                        <a href="#"
+                            class="w-[50px] h-[50px] bg-[#BE8E27] rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-cart-shopping justify-self-auto"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="h-auto bg-[#202831] flex flex-col rounded-2xl text-white">
+                <div class="bg-[#F2F2F4] rounded-bl-[20%] rounded-t-2xl py-10 overflow-hidden">
+                    <img class="w-[200px] m-auto transition-transform duration-200 hover:scale-110"
+                        src="src/assets/img/f1.png" alt="">
+                </div>
+                <div class="p-4 flex flex-col gap-5">
+                    <span class="text-2xl">Tasty Burger</span>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, beatae quo facilis blanditiis ea
+                        quis quibusdam maxime reiciendis sit voluptatibus</div>
+                    <div class="flex justify-between items-center">
+                        <div>$19</div>
+                        <a href="#"
+                            class="w-[50px] h-[50px] bg-[#BE8E27] rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-cart-shopping justify-self-auto"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="h-auto bg-[#202831] flex flex-col rounded-2xl text-white">
+                <div class="bg-[#F2F2F4] rounded-bl-[20%] rounded-t-2xl py-10 overflow-hidden">
+                    <img class="w-[200px] m-auto transition-transform duration-200 hover:scale-110"
+                        src="src/assets/img/f2.png" alt="">
+                </div>
+                <div class="p-4 flex flex-col gap-5">
+                    <span class="text-2xl">Tasty Burger</span>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, beatae quo facilis blanditiis ea
+                        quis quibusdam maxime reiciendis sit voluptatibus</div>
+                    <div class="flex justify-between items-center">
+                        <div>$19</div>
+                        <a href="#"
+                            class="w-[50px] h-[50px] bg-[#BE8E27] rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-cart-shopping justify-self-auto"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="h-auto bg-[#202831] flex flex-col rounded-2xl text-white">
+                <div class="bg-[#F2F2F4] rounded-bl-[20%] rounded-t-2xl py-10 overflow-hidden">
+                    <img class="w-[200px] m-auto transition-transform duration-200 hover:scale-110"
+                        src="src/assets/img/f4.png" alt="">
+                </div>
+                <div class="p-4 flex flex-col gap-5">
+                    <span class="text-2xl">Tasty Burger</span>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, beatae quo facilis blanditiis ea
+                        quis quibusdam maxime reiciendis sit voluptatibus</div>
+                    <div class="flex justify-between items-center">
+                        <div>$19</div>
+                        <a href="#"
+                            class="w-[50px] h-[50px] bg-[#BE8E27] rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-cart-shopping justify-self-auto"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="h-auto bg-[#202831] flex flex-col rounded-2xl text-white">
+                <div class="bg-[#F2F2F4] rounded-bl-[20%] rounded-t-2xl py-10 overflow-hidden">
+                    <img class="w-[200px] m-auto transition-transform duration-200 hover:scale-110"
+                        src="src/assets/img/f5.png" alt="">
+                </div>
+                <div class="p-4 flex flex-col gap-5">
+                    <span class="text-2xl">Tasty Burger</span>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, beatae quo facilis blanditiis ea
+                        quis quibusdam maxime reiciendis sit voluptatibus</div>
+                    <div class="flex justify-between items-center">
+                        <div>$19</div>
+                        <a href="#"
+                            class="w-[50px] h-[50px] bg-[#BE8E27] rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-cart-shopping justify-self-auto"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="h-auto bg-[#202831] flex flex-col rounded-2xl text-white">
+                <div class="bg-[#F2F2F4] rounded-bl-[20%] rounded-t-2xl py-10 overflow-hidden">
+                    <img class="w-[200px] m-auto transition-transform duration-200 hover:scale-110"
+                        src="src/assets/img/f6.png" alt="">
+                </div>
+                <div class="p-4 flex flex-col gap-5">
+                    <span class="text-2xl">Tasty Burger</span>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, beatae quo facilis blanditiis ea
+                        quis quibusdam maxime reiciendis sit voluptatibus</div>
+                    <div class="flex justify-between items-center">
+                        <div>$19</div>
+                        <a href="#"
+                            class="w-[50px] h-[50px] bg-[#BE8E27] rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-cart-shopping justify-self-auto"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="h-auto bg-[#202831] flex flex-col rounded-2xl text-white">
+                <div class="bg-[#F2F2F4] rounded-bl-[20%] rounded-t-2xl py-10 overflow-hidden">
+                    <img class="w-[200px] m-auto transition-transform duration-200 hover:scale-110"
+                        src="src/assets/img/f7.png" alt="">
+                </div>
+                <div class="p-4 flex flex-col gap-5">
+                    <span class="text-2xl">Tasty Burger</span>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, beatae quo facilis blanditiis ea
+                        quis quibusdam maxime reiciendis sit voluptatibus</div>
+                    <div class="flex justify-between items-center">
+                        <div>$19</div>
+                        <a href="#"
+                            class="w-[50px] h-[50px] bg-[#BE8E27] rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-cart-shopping justify-self-auto"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="h-auto bg-[#202831] flex flex-col rounded-2xl text-white">
+                <div class="bg-[#F2F2F4] rounded-bl-[20%] rounded-t-2xl py-10 overflow-hidden">
+                    <img class="w-[200px] m-auto transition-transform duration-200 hover:scale-110"
+                        src="src/assets/img/f8.png" alt="">
+                </div>
+                <div class="p-4 flex flex-col gap-5">
+                    <span class="text-2xl">Tasty Burger</span>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, beatae quo facilis blanditiis ea
+                        quis quibusdam maxime reiciendis sit voluptatibus</div>
+                    <div class="flex justify-between items-center">
+                        <div>$19</div>
+                        <a href="#"
+                            class="w-[50px] h-[50px] bg-[#BE8E27] rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-cart-shopping justify-self-auto"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="h-auto bg-[#202831] flex flex-col rounded-2xl text-white">
+                <div class="bg-[#F2F2F4] rounded-bl-[20%] rounded-t-2xl py-10 overflow-hidden">
+                    <img class="w-[200px] m-auto transition-transform duration-200 hover:scale-110"
+                        src="src/assets/img/f9.png" alt="">
+                </div>
+                <div class="p-4 flex flex-col gap-5">
+                    <span class="text-2xl">Tasty Burger</span>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, beatae quo facilis blanditiis ea
+                        quis quibusdam maxime reiciendis sit voluptatibus</div>
+                    <div class="flex justify-between items-center">
+                        <div>$19</div>
+                        <a href="#"
+                            class="w-[50px] h-[50px] bg-[#BE8E27] rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-cart-shopping justify-self-auto"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <a href="#"
+            class="mt-10 mx-auto bg-[#BE8E27] hover:bg-[rgba(190,142,39,0.7)] px-10 py-2 block w-[200px] text-center rounded-full text-white">View
+            More</a>
+
+
+    </main>
+    <section class="w-full h-screen py-10 sm:h-[60vh] mt-10 bg-[#202831] flex items-center justify-center">
+        <div class="container flex flex-col px-10 h-full sm:flex-row-reverse justify-center items-center gap-10">
+            <div class="flex flex-col gap-5 text-white sm:w-1/2 justify-center">
+                <div class="text-3xl font-[Dancing_Script]">We are Feane</div>
+                <div>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                    anything embarrassing hidden in the middle of text. All</div>
+                <a href="#" class="bg-[#BE8E27] hover:bg-[rgba(190,142,39,0.7)] px-10 py-2 block w-[200px] text-center rounded-full text-white">View
+                    More</a>
+            </div>
+            <div class="h-full flex items-center"><img class="sm:h-[70%]" src="src/assets/img/about-img.png" alt="">
+            </div>
+
+        </div>
+    </section>
+    <div class="container px-10 sm:flex items-center mt-10  mx-auto gap-5 justify-between">
+        <form class="flex flex-col gap-5 sm:w-1/2" action="">
+            <h2 class="font-[Dancing_Script] text-3xl" >Book A Table</h2>
+            <div class="flex flex-col gap-5 ">
+                <input placeholder="Your Name" class="border w-full rounded h-10 px-4 outline-0" type="text">
+                <input placeholder="Phone Number" class="border w-full rounded h-10 px-4 outline-0" type="text">
+                <input placeholder="Your Email" class="border w-full rounded h-10 px-4 outline-0" type="text">
+                <select class="outline-0 border w-full rounded h-10 px-4" name="" id="">
+                    <option value="">How many persons ?</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+                <input class="border w-full rounded h-10 px-4 outline-0" type="date">
+
+            </div>
+            <a href="#" class="bg-[#BE8E27] px-10 py-2 block w-[200px] text-center rounded-full text-white">Book
+                Now</a>
+        </form>
+        <div class="sm:w-1/2 h-[400px] flex items-center"><iframe class="w-full h-[80%]"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3883.89018138824!2d2.2737297769753733!3d13.232207887107734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11d0170febd4fb01%3A0x82f4b27e584aec05!2sCODELOCCOL!5e0!3m2!1sfr!2sne!4v1765460684479!5m2!1sfr!2sne"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+    <div class="container px-10 flex flex-col mt-10 mx-auto">
+        <h2 class="mx-auto font-[Dancing_Script] text-3xl">What Says Ours Customers</h2>
+        <div class="w-full animation-fil-2 grid grid-cols-2 gap-5 mx-auto mt-10">
+            <div class="flex relative flex-col bg-[#202831] gap-2 rounded text-white p-5">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, nihil fugit delectus ut in eos et
+                    quaerat! Omnis possimus vel laboriosam assumenda minima</p>
+                <div>Mike Hanel</div>
+                <span>magna alika</span>
+                <div
+                    class="absolute -bottom-[70px] translate-y-1/2 left-0 w-[100px] h-[100px] border-4 rounded-full border-amber-400">
+                    <img class="w-full h-full rounded-full" src="src/assets/img/client2.jpg" alt="">
+                    <div class="absolute w-0 h-0 border-l-transparent"></div>
+                    <div
+                        class="absolute -top-5 left-1/2 -translate-x-1/2  w-0 h-0 border-x-20 border-x-transparent border-b-20 border-b-amber-400">
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex relative flex-col bg-[#202831] gap-2 rounded text-white p-5">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, nihil fugit delectus ut in eos et
+                    quaerat! Omnis possimus vel laboriosam assumenda minima</p>
+                <div>Mike Hanel</div>
+                <span>magna alika</span>
+                <div
+                    class="absolute -bottom-[70px] translate-y-1/2 left-0 w-[100px] h-[100px] border-4 rounded-full border-amber-400">
+                    <img class="w-full h-full rounded-full" src="src/assets/img/client1.jpg" alt="">
+                    <div
+                        class="absolute -top-5 left-1/2 -translate-x-1/2  w-0 h-0 border-x-20 border-x-transparent border-b-20 border-b-amber-400">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-[180px] flex justify-center gap-5">
+            <a href="">
+                <div
+                    class="w-[50px] h-[50px] bg-amber-400 rounded-full flex justify-center items-center text-white text-2xl">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+
+            </a>
+            <a href="">
+                <div
+                    class="w-[50px] h-[50px] bg-amber-400 rounded-full flex justify-center items-center text-white text-2xl">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+
+            </a>
+        </div>
+
+    </div>
+    <footer class="w-screen mt-10 bg-[#202831] py-20 text-white">
+        <div class="container px-10 flex flex-col items-center sm:items-start gap-10 sm:gap-0 sm:flex-row justify-around mx-auto">
+            <div class="flex flex-col gap-5 items-center sm:items-start">
+                <h2 class="font-[Dancing_Script] text-3xl">Contact Us</h2>
+                <div class="flex flex-col">
+                    <ul class="flex flex-col gap-3">
+                        <li class="hover:text-amber-400 "><i
+                                class="fa-solid fa-location-dot hover:text-amber-400 "></i><span class="text-gray-400">Location</span> </li>
+                        <li class="hover:text-amber-400 "><i class="fa-solid fa-phone hover:text-amber-400 "></i><span class="text-gray-400">Call
+                            +227 87878989</span> </li>
+                        <li class="hover:text-amber-400 "><i
+                                class="fa-solid fa-envelope hover:text-amber-400 "></i><span class="text-gray-400">demoive@gmail.com</span> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col items-center sm:items-start gap-5 w-1/3">
+                <h2 class="font-[Dancing_Script] text-3xl">Feane</h2>
+                <div class="flex flex-col gap-3">
+                    <p class="text-center text-gray-400">Necessary, making this the first true generator on the Internet. It uses a
+                        dictionary of over 200
+                        Latin words, combined with</p>
+                    <div class="flex gap-3">
+                        <div class="flex justify-center items-center w-10 h-10 bg-white text-[#202831] hover:text-amber-400 rounded-full text-2xl"> <i class="fa-brands fa-facebook-f"></i> </div>
+                        <div class="flex justify-center items-center w-10 h-10 bg-white text-[#202831] hover:text-amber-400 rounded-full text-2xl"> <i class="fa-brands fa-twitter"></i> </div>
+                        <div class="flex justify-center items-center w-10 h-10 bg-white text-[#202831] hover:text-amber-400 rounded-full text-2xl"> <i class="fa-brands fa-pinterest-p"></i> </div>
+                        <div class="flex justify-center items-center w-10 h-10 bg-white text-[#202831] hover:text-amber-400 rounded-full text-2xl"> <i class="fa-brands fa-instagram"></i> </div>
+                        <div class="flex justify-center items-center w-10 h-10 bg-white text-[#202831] hover:text-amber-400 rounded-full text-2xl"> <i class="fa-brands fa-linkedin-in"></i> </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 items-center sm:items-start">
+                <h2 class="font-[Dancing_Script] text-3xl">Openning Hours</h2>
+                <div class="flex flex-col gap-3 items-center sm:items-start text-gray-400">
+                    <div>Everyday</div>
+                    <div>10:00 AM - 10:00 PM</div>
+                </div>
+            </div>
+        </div>
+        <div class="container px-10 flex flex-col gap-5 items-center mx-auto pt-10 text-gray-400">
+            <div>© 2025 All rights Reserved by Free Html Templates</div>
+            <div>© Distribued by code runned</div>
+        </div>
+    </footer>
+</body>
+
+</html>

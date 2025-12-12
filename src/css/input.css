@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@keyframes fil {
+    0%{
+        transform: translateX(0);
+    }
+   
+    100%{
+        transform: translateX(-66.66%);
+    }
+    
+}
+.animation-fil{
+    animation: fil 20s linear infinite;
+}
+
+@keyframes fil-2 {
+    0%{
+        transform: translateX(100%);
+    }
+   
+    10%{
+        transform: translateX(0);
+    }
+    90%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+    
+}
+.animation-fil-2{
+    animation: fil-2 3s linear infinite;
+}

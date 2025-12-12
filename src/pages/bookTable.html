@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/fontawesome/webfonts/fa-brands-400.woff2">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fugaz+One&display=swap" rel="stylesheet">
+</head>
+
+<body class="">
+    <section class="group relative w-screen  overflow-hidden">
+        <div class="absolute w-full h-[1020px] bg-[url('../assets/img/hero-bg.jpg')] bg-center -z-10"></div>
+        <header class=" container px-10 mx-auto group">
+            <nav class="flex justify-between text-white items-center pt-2">
+                <span class="logo pr-10 text-4xl font-[Dancing_Script]">Feane</span>
+                <ul class="hidden lg:flex items-center gap-4">
+                    <li class=" hover:text-[#BE8E27]"> <a href="../../index.html">HOME</a> </li>
+                    <li class=" hover:text-[#BE8E27]"> <a href="./menu.html">MENU</a> </li>
+                    <li class=" hover:text-[#BE8E27]"> <a href="./about.html">ABOUT</a> </li>
+                    <li class=" text-[#BE8E27]"> <a href="./bookTable.html">BOOK TABLE</a> </li>
+                </ul>
+                <ul class="hidden lg:flex gap-4 items-center">
+                    <li class=" hover:text-[#BE8E27]"> <a href="#"> <i class="fa-solid fa-user"></i> </a> </li>
+                    <li class=" hover:text-[#BE8E27]"> <a href="#"> <i class="fa-solid fa-cart-shopping"></i> </a> </li>
+                    <li class=" hover:text-[#BE8E27]"> <a href="#"> <i class="fa-solid fa-magnifying-glass"></i> </a>
+                    </li>
+                    <li class=""> <a class="px-6 py-2 bg-[#BE8E27] flex rounded-full" href="#"> Order Online </a> </li>
+                </ul>
+
+                <div class="relative flex lg:hidden group w-10 h-full">
+
+                    <label class="absolute -top-4 right-0 w-full h-full bg-transparent group" for="close">
+                        <input type="radio" name="btn-op" id="close" class="peer hidden" checked>
+                        <div
+                            class="peer-checked:opacity-0 transition-transform duration-100 rotate-180 peer-checked:rotate-0">
+                            <i class="fa-solid fa-xmark text-4xl"></i>
+                        </div>
+                    </label>
+                    <label class="absolute -top-4 right-0 w-full h-full bg-transparent" for="open">
+                        <input type="radio" name="btn-op" id="open" class="peer hidden z-1">
+                        <div class="peer-checked:opacity-0 peer-checked:hidden"> <i
+                                class="fa-solid fa-list text-4xl"></i></div>
+                    </label>
+                </div>
+
+            </nav>
+
+            <div
+                class="flex relative w-full lg:hidden opacity-0 flex-col  h-0 transition-all duration-500 group-has-[#open:checked]:h-[310px] group-has-[#open:checked]:opacity-100 items-center text-white gap-5 mb-10 bg-[url('../assets/img/hero-bg.jpg')] sm:bg-none bg-center bg-cover">
+                <div class="absolute z-10  w-full flex flex-col items-center gap-10 h-[310px]">
+                    <ul class="flex flex-col items-center gap-10">
+                        <li class=" hover:text-[#BE8E27]"> <a href="../../index.html">HOME</a> </li>
+                        <li class=" hover:text-[#BE8E27]"> <a href="./menu.html">MENU</a> </li>
+                        <li class=" hover:text-[#BE8E27]"> <a href="./about.html">ABOUT</a> </li>
+                        <li class=" text-[#BE8E27]"> <a href="./bookTable.html">BOOK TABLE</a> </li>
+                    </ul>
+                    <ul class="flex gap-10 items-center">
+                        <li class=" hover:text-[#BE8E27]"> <a href="#"> <i class="fa-solid fa-user"></i> </a> </li>
+                        <li class=" hover:text-[#BE8E27]"> <a href="#"> <i class="fa-solid fa-cart-shopping"></i> </a>
+                        </li>
+                        <li class=" hover:text-[#BE8E27]"> <a href="#"> <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </li>
+                        <li class=""> <a class="px-6 py-2 bg-[#BE8E27] flex rounded-full" href="#"> Order Online </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+        </header>
+    </section>
+    <main class="container px-10 mx-auto my-10">
+       
+         <div class="container px-10 sm:flex items-center mt-10  mx-auto gap-5 justify-between">
+        <form class="flex flex-col gap-5 sm:w-1/2" action="">
+            <h2 class="font-[Dancing_Script] text-3xl" >Book A Table</h2>
+            <div class="flex flex-col gap-5 ">
+                <input placeholder="Your Name" class="border w-full rounded h-10 px-4 outline-0" type="text">
+                <input placeholder="Phone Number" class="border w-full rounded h-10 px-4 outline-0" type="text">
+                <input placeholder="Your Email" class="border w-full rounded h-10 px-4 outline-0" type="text">
+                <select class="outline-0 border w-full rounded h-10 px-4" name="" id="">
+                    <option value="">How many persons ?</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+                <input class="border w-full rounded h-10 px-4 outline-0" type="date">
+
+            </div>
+            <a href="#" class="bg-[#BE8E27] px-10 py-2 block w-[200px] text-center rounded-full text-white">Book
+                Now</a>
+        </form>
+        <div class="sm:w-1/2 h-[400px] flex items-center"><iframe class="w-full h-[80%]"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3883.89018138824!2d2.2737297769753733!3d13.232207887107734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11d0170febd4fb01%3A0x82f4b27e584aec05!2sCODELOCCOL!5e0!3m2!1sfr!2sne!4v1765460684479!5m2!1sfr!2sne"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+      
+    </main>
+  
+    <footer class="w-screen mt-10 bg-[#202831] py-20 text-white">
+        <div class="container px-10 flex flex-col items-center sm:items-start gap-10 sm:gap-0 sm:flex-row justify-around mx-auto">
+            <div class="flex flex-col gap-5 items-center sm:items-start">
+                <h2 class="font-[Dancing_Script] text-3xl">Contact Us</h2>
+                <div class="flex flex-col">
+                    <ul class="flex flex-col gap-3">
+                        <li class="hover:text-amber-400 "><i
+                                class="fa-solid fa-location-dot hover:text-amber-400 "></i><span class="text-gray-400">Location</span> </li>
+                        <li class="hover:text-amber-400 "><i class="fa-solid fa-phone hover:text-amber-400 "></i><span class="text-gray-400">Call
+                            +227 87878989</span> </li>
+                        <li class="hover:text-amber-400 "><i
+                                class="fa-solid fa-envelope hover:text-amber-400 "></i><span class="text-gray-400">demoive@gmail.com</span> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col items-center sm:items-start gap-5 w-1/3">
+                <h2 class="font-[Dancing_Script] text-3xl">Feane</h2>
+                <div class="flex flex-col gap-3">
+                    <p class="text-center text-gray-400">Necessary, making this the first true generator on the Internet. It uses a
+                        dictionary of over 200
+                        Latin words, combined with</p>
+                    <div class="flex gap-3">
+                        <div class="flex justify-center items-center w-10 h-10 bg-white text-[#202831] hover:text-amber-400 rounded-full text-2xl"> <i class="fa-brands fa-facebook-f"></i> </div>
+                        <div class="flex justify-center items-center w-10 h-10 bg-white text-[#202831] hover:text-amber-400 rounded-full text-2xl"> <i class="fa-brands fa-twitter"></i> </div>
+                        <div class="flex justify-center items-center w-10 h-10 bg-white text-[#202831] hover:text-amber-400 rounded-full text-2xl"> <i class="fa-brands fa-pinterest-p"></i> </div>
+                        <div class="flex justify-center items-center w-10 h-10 bg-white text-[#202831] hover:text-amber-400 rounded-full text-2xl"> <i class="fa-brands fa-instagram"></i> </div>
+                        <div class="flex justify-center items-center w-10 h-10 bg-white text-[#202831] hover:text-amber-400 rounded-full text-2xl"> <i class="fa-brands fa-linkedin-in"></i> </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 items-center sm:items-start">
+                <h2 class="font-[Dancing_Script] text-3xl">Openning Hours</h2>
+                <div class="flex flex-col gap-3 items-center sm:items-start text-gray-400">
+                    <div>Everyday</div>
+                    <div>10:00 AM - 10:00 PM</div>
+                </div>
+            </div>
+        </div>
+        <div class="container px-10 flex flex-col gap-5 items-center mx-auto pt-10 text-gray-400">
+            <div>© 2025 All rights Reserved by Free Html Templates</div>
+            <div>© Distribued by code runned</div>
+        </div>
+    </footer>
+</body>
+
+</html>
