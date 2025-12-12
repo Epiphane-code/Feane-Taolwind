@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="src/css/main.css">
-    <link rel="stylesheet" href="src/assets/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="src/assets/fontawesome/webfonts/fa-brands-400.woff2">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./src/assets/fontawesome/webfonts/fa-brands-400.woff2">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fugaz+One&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <section class="group w-screen min-h-screen bg-[url('/src/assets/img/hero-bg.jpg')] bg-center bg-cover">
+<body class="">
+    <section class="group w-screen min-h-screen bg-[url('src/assets/img/hero-bg.jpg')] bg-center bg-cover" style="background-image: url(./src/assets/img/hero-bg.jpg);">
         <header class=" container px-10 mx-auto group">
             <nav class="flex justify-between text-white items-center pt-2">
                 <span class="logo pr-10 text-4xl font-[Dancing_Script]">Feane</span>
@@ -50,7 +50,7 @@
 
             <div
                 class="flex relative w-full lg:hidden opacity-0 flex-col  h-0 transition-all duration-500 group-has-[#open:checked]:h-61 group-has-[#open:checked]:opacity-100 items-center text-white pt-10 gap-5 mb-10 ">
-                <div class="absolute  w-full flex flex-col items-center gap-10 h-[300px] bg-[url('/src/assets/img/hero-bg.jpg')] sm:bg-none bg-center bg-cover">
+                <div class="absolute  w-full flex flex-col items-center gap-10 h-[300px] bg-[url('./src/assets/img/hero-bg.jpg')] smbg-none bg-center bg-cover" style="background-image: url(./src/assets/img/hero-bg.jpg); ">
                     <ul class="flex flex-col items-center gap-10">
                         <li class=" text-[#BE8E27]"> <a href="./index.html">HOME</a> </li>
                         <li class=" hover:text-[#BE8E27]"> <a href="./src/pages/menu.html">MENU</a> </li>
@@ -99,7 +99,7 @@
                     </label>
                 </div>
 
-                <div class="relative h-[250px] w-full overflow-hidden">
+                <div class="relative h-[400px] w-full overflow-hidden">
                     <div
                         class="absolute top-1/2 -translate-y-1/2 w-[300%] grid grid-cols-3 transition-transform duration-500 animation-fil group-has-[#un:checked]:translate-x-0 group-has-[#deux:checked]:translate-x-[33.33%] group-has-[#trois:checked]:translate-x-[66.66%] group-has-[input:focus]:transition-none">
                         <div class="w-[400px] flex flex-col gap-4">

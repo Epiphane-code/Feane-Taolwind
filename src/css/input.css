@@ -32,3 +32,8 @@
 .animation-fil-2{
     animation: fil-2 3s linear infinite;
 }
+@media (width >= 40rem){
+ .smbg-none{
+    background-image: none !important;
+}
+}
